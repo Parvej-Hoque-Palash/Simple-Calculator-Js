@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="introduction__section">
+    <h4>Input two numbers and choose a operation among the following:</h4>
+    <ol>
+      <li>Addition: '+'</li>
+      <li>Subtraction: '-'</li>
+      <li>Multiplication: '*'</li>
+      <li>Division: '/'</li>
+      <li>Modulus: '%'</li>
+      <li>Permutation(nPr): 'P' or 'p'</li>
+      <li>Combination(nCr): 'C' or 'c'</li>
+      <li>Logarithm(logN(M)): 'log' or 'Log' or 'LOG'</li>
+    </ol>
+  </div>
+  <div class="calculation__section">
+    <h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Number1  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Operation    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    Number2</h5>
+    <input id="marks-inp1" type="number" />
+    <input id="marks-op" type="char" />
+    <input id="marks-inp2" type="number" />
+    <button class="calc__button" onclick="calculateGrade()">Calculate</button>
+  </div>
+  <div class="result__section">
+    <h4>Result:</h4>
+    <p id="result"></p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
